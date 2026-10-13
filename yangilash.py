@@ -84,7 +84,7 @@ def main():
     if not cat: print("katalog.json topilmadi"); sys.exit(1)
     st = load(STATE, {"offset": 0, "initialized": False, "pending": []})
 
-    r = api("getUpdates", {"offset": st["offset"], "timeout": 0, "allowed_updates": json.dumps(["channel_post"])})
+    r = api("getUpdates", {"offset": st["offset"], "timeout": 0, "allowed_updates": json.dumps(["channel_post", "edited_channel_post"])})
     if not r.get("ok"):
         print("getUpdates xato:", r.get("description")); sys.exit(1)
     updates = r["result"]
@@ -98,14 +98,31 @@ def main():
         print(f"Boşlanğiç holat yozildi ({len(updates)} ta eski yangilaniş ötkazildi).")
         return
 
-    posts = [u["channel_post"] for u in updates if "channel_post" in u]
+    posts = [u.get("channel_post") or u.get("edited_channel_post") for u in updates if "channel_post" in u or "edited_channel_post" in u]
     posts = [m for m in posts if (m.get("chat", {}).get("username") or "").lower() == CHANNEL.lower()]
-    # oldingi safar tegi bölmagan postlarni qayta tekşiramiz
+    # oldingi safar tegi bölmagan postlarni qayta tekşiramiz (3 kundan eskisi taşlab yuboriladi)
+    now = time.time()
     for p in st.get("pending", []):
-        if not any(m["message_id"] == p["message_id"] for m in posts):
-            posts.append(p)
+        if now - p.get("date", now) > 3 * 86400:
+            continue
+        if any(m["message_id"] == p["message_id"] for m in posts):
+            continue
+        if ADMIN:
+            # Postning hozirgi matnini olamiz: adminga forward qilib, darhol öçiramiz
+            fw = api("forwardMessage", {"chat_id": ADMIN, "from_chat_id": "@" + CHANNEL, "message_id": p["message_id"], "disable_notification": "true"})
+            if not fw.get("ok"):
+                continue   # post öçirilgan — unutamiz
+            cur = fw["result"]
+            api("deleteMessage", {"chat_id": ADMIN, "message_id": cur["message_id"]})
+            for k in ("text", "caption", "document", "photo"):
+                if k in cur: p[k] = cur[k]
+                elif k in p: del p[k]
+        p["_pending"] = True
+        posts.append(p)
     st["pending"] = []
-    posts.sort(key=lambda m: m["message_id"])
+    uniq = {}
+    for m in posts: uniq[m["message_id"]] = m     # bir postning oxirgi holati qoladi
+    posts = sorted(uniq.values(), key=lambda m: m["message_id"])
 
     changed = False
     report = []
@@ -135,8 +152,10 @@ def main():
         if parsed is None:
             continue
         if not parsed["sec"]:
+            # Post hali turibdimi? (öçirilgan bölsa — unutamiz)
             st["pending"].append({k: m[k] for k in m if k in ("message_id", "date", "text", "caption", "document", "photo", "chat")})
-            notify(f"⚠️ Post #{mid} da bölim tegi yöq. Postga #excel / #1c / #qonun / #jadval / #til / #python dan birini qöşing — keyingi tekşiruvda raqamlanadi.\nhttps://t.me/{CHANNEL}/{mid}")
+            if not m.get("_pending"):
+                notify(f"⚠️ Post #{mid} da bölim tegi yöq. Postga #excel / #1c / #qonun / #jadval / #til / #python dan birini qöşing — keyingi tekşiruvda raqamlanadi (yoki postni öçiring).\nhttps://t.me/{CHANNEL}/{mid}")
             continue
 
         num = next_num(cat, parsed["sec"])
