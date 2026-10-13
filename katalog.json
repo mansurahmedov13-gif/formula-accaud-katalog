@@ -1984,24 +1984,6 @@
    "photo": false,
    "date": "2026-05-25",
    "note": ""
-  },
-  {
-   "num": "E-035",
-   "sec": "E",
-   "title": "Sinov: katalog boti",
-   "body": "Bu post bot tomonidan avtomat raqamlanishi kerak.",
-   "tags": [
-    "excel",
-    "sinov"
-   ],
-   "post": 222,
-   "posts": [
-    222
-   ],
-   "files": [],
-   "photo": false,
-   "date": "2026-10-13",
-   "note": ""
   }
  ]
 }
