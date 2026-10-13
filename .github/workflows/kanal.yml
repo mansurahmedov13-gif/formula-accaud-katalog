@@ -1,1 +1,30 @@
+name: kanal-katalog
 
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  yangilash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Yangilash
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          ADMIN_ID: ${{ vars.ADMIN_ID }}
+          CHANNEL: formulaAccaud
+        run: python yangilash.py
+      - name: Saqlash
+        run: |
+          git config user.name "accaud-bot"
+          git config user.email "accaud-bot@users.noreply.github.com"
+          git add katalog.json state.json
+          git diff --cached --quiet || (git commit -m "katalog: yangi postlar" && git push)
