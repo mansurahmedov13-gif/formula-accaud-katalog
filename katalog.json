@@ -1590,7 +1590,8 @@
    ],
    "post": 219,
    "posts": [
-    219
+    219,
+    224
    ],
    "files": [],
    "photo": false,
@@ -1983,6 +1984,65 @@
    ],
    "photo": false,
    "date": "2026-05-25",
+   "note": ""
+  },
+  {
+   "num": "Q-013",
+   "sec": "Q",
+   "title": "MHXS navigatori",
+   "body": "Moliyaviy hisobotning xalqaro standartlari (IFRS) böyiça navigator — standartlar röyxati, bölimlar böyiça qidiruv va bandlarga havolalar.\nhttps://claude.ai/artifact/T2TdJYo1pMQChYyTp6SNeG",
+   "tags": [
+    "qonun",
+    "mhxs",
+    "ifrs",
+    "navigator"
+   ],
+   "post": 225,
+   "posts": [
+    225
+   ],
+   "files": [],
+   "photo": false,
+   "date": "2026-10-13",
+   "note": ""
+  },
+  {
+   "num": "Q-014",
+   "sec": "Q",
+   "title": "Safar xarajati kalkulyatori",
+   "body": "Xizmat safari xarajatlarini (sutkalik, yöl, turar joy) amaldagi meʼyorlar böyiça hisoblab beradigan kalkulyator.\nhttps://claude.ai/artifact/7tePoCHzA5Gy7rj7Lj5T43",
+   "tags": [
+    "qonun",
+    "safar",
+    "kalkulyator"
+   ],
+   "post": 226,
+   "posts": [
+    226
+   ],
+   "files": [],
+   "photo": false,
+   "date": "2026-10-13",
+   "note": ""
+  },
+  {
+   "num": "Q-015",
+   "sec": "Q",
+   "title": "Xizmat importi: QQS va foyda soliği matritsasi",
+   "body": "Çet el kompaniyasidan xizmat sotib olganda QQS va foyda soliği (norezident daromadi) qaçon yuzaga kelişini körsatadigan matritsa.\nhttps://claude.ai/artifact/ExMbXHkhixRkFNYbVsUqn6",
+   "tags": [
+    "qonun",
+    "soliq",
+    "qqs",
+    "import"
+   ],
+   "post": 227,
+   "posts": [
+    227
+   ],
+   "files": [],
+   "photo": false,
+   "date": "2026-10-13",
    "note": ""
   }
  ]
