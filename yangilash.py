@@ -56,9 +56,9 @@ def next_num(cat, sec):
 def parse_post(text):
     """Matndan sarlavha, tana, teglar va bölimni ajratadi."""
     text = text.strip()
-    if text.startswith(("📌", "📎", "📚", "🗂")):      # raqamlangan yoki xizmat posti
+    if text.startswith(("📌", "📎", "📚", "🗂", "⏰")):      # raqamlangan, xizmat yoki eslatma posti
         return None
-    if "NAVIGATOR" in text or "accaudbot/katalog" in text.lower():   # navigator / eʼlon postlari
+    if "NAVIGATOR" in text or "accaudbot/katalog" in text.lower() or "#muddat" in text:   # navigator / eʼlon / eslatma
         return None
     tags = re.findall(r"#([A-Za-z0-9_]+)", text)
     sec = next((SEC_TAGS[t.lower()] for t in tags if t.lower() in SEC_TAGS), None)

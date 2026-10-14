@@ -1,0 +1,266 @@
+{
+ "_izoh": "Soliq va hisobot muddatlari kalendari. 'faol': true bölganlari kanalga eslatiladi. 'davr': oylik | choraklik | yillik — ötgan davr uçun; '_joriy' qöşimçasi — joriy davr uçun (avans, joriy yil). 'kun' — muddat kuni; 'oylar' — muddat tuşadigan oylar. Dam olish/bayramga tuşsa keyingi iş kuniga suriladi (SK 5-modda).",
+ "eslatma_kunlari": [
+  3,
+  2,
+  1,
+  0
+ ],
+ "bayramlar_2026": [
+  "2026-01-01",
+  "2026-01-14",
+  "2026-03-08",
+  "2026-03-20",
+  "2026-03-21",
+  "2026-05-09",
+  "2026-05-27",
+  "2026-09-01",
+  "2026-10-01",
+  "2026-12-08"
+ ],
+ "bayramlar_2027": [
+  "2027-01-01",
+  "2027-01-14",
+  "2027-03-08",
+  "2027-03-09",
+  "2027-03-21",
+  "2027-05-09",
+  "2027-05-16",
+  "2027-09-01",
+  "2027-10-01",
+  "2027-12-08"
+ ],
+ "_bayram_izoh": "Hayit kunlari taxminiy — rasmiy eʼlon çiqqaç tuzating. Hukumat köçirgan dam olish kunlarini ham şu röyxatga qöşing.",
+ "muddatlar": [
+  {
+   "id": "qqs",
+   "nom": "QQS — oylik hisobot va tölov",
+   "tur": "ikkalasi",
+   "davr": "oylik",
+   "kun": 20,
+   "faol": true,
+   "izoh": "SK 273-modda",
+   "teg": "#qqs"
+  },
+  {
+   "id": "foyda_chorak",
+   "nom": "Foyda soliği — çoraklik hisobot va tölov",
+   "tur": "ikkalasi",
+   "davr": "choraklik",
+   "kun": 20,
+   "oylar": [
+    4,
+    7,
+    10
+   ],
+   "faol": true,
+   "izoh": "SK 339–340-moddalar",
+   "teg": "#foyda_soligi"
+  },
+  {
+   "id": "foyda_yillik",
+   "nom": "Foyda soliği — yillik hisobot va tölov",
+   "tur": "ikkalasi",
+   "davr": "yillik",
+   "kun": 1,
+   "oylar": [
+    3
+   ],
+   "faol": true,
+   "izoh": "SK 339-modda",
+   "teg": "#foyda_soligi"
+  },
+  {
+   "id": "foyda_avans",
+   "nom": "Foyda soliği — oylik avans tölovi",
+   "tur": "tolov",
+   "davr": "oylik_joriy",
+   "kun": 23,
+   "faol": true,
+   "izoh": "Avans tölovçilari uçun (SK 340-modda)",
+   "teg": "#foyda_soligi"
+  },
+  {
+   "id": "aylanma",
+   "nom": "Aylanma soliq — oylik hisobot va tölov",
+   "tur": "ikkalasi",
+   "davr": "oylik",
+   "kun": 15,
+   "faol": true,
+   "izoh": "SK 470–471-moddalar",
+   "teg": "#aylanma_soliq"
+  },
+  {
+   "id": "jshds",
+   "nom": "JŞDS va ijtimoiy soliq — oylik hisobot va tölov",
+   "tur": "ikkalasi",
+   "davr": "oylik",
+   "kun": 15,
+   "faol": true,
+   "izoh": "SK 389, 407-moddalar; JŞDS — daromad tölangan kunda",
+   "teg": "#jshds #ijtimoiy_soliq"
+  },
+  {
+   "id": "aksiz",
+   "nom": "Aksiz soliği — oylik hisobot va tölov",
+   "tur": "ikkalasi",
+   "davr": "oylik",
+   "kun": 10,
+   "faol": false,
+   "tekshirish": true,
+   "izoh": "SK 299-modda — muddatni tekşiring",
+   "teg": "#aksiz"
+  },
+  {
+   "id": "molmulk_avans",
+   "nom": "Mol-mulk soliği — çoraklik avans tölovi",
+   "tur": "tolov",
+   "davr": "choraklik_joriy",
+   "kun": 10,
+   "oylar": [
+    2,
+    5,
+    8,
+    11
+   ],
+   "faol": false,
+   "tekshirish": true,
+   "izoh": "Yuridik şaxslar (SK 419-modda) — tekşiring",
+   "teg": "#molmulk_soligi"
+  },
+  {
+   "id": "molmulk_yillik",
+   "nom": "Mol-mulk soliği — yillik hisobot",
+   "tur": "hisobot",
+   "davr": "yillik",
+   "kun": 1,
+   "oylar": [
+    3
+   ],
+   "faol": false,
+   "tekshirish": true,
+   "izoh": "Yuridik şaxslar (SK 419-modda) — tekşiring",
+   "teg": "#molmulk_soligi"
+  },
+  {
+   "id": "yer_hisobot",
+   "nom": "Yer soliği — yillik hisobot",
+   "tur": "hisobot",
+   "davr": "yillik_joriy",
+   "kun": 10,
+   "oylar": [
+    1
+   ],
+   "faol": false,
+   "tekshirish": true,
+   "izoh": "Yuridik şaxslar (SK 431-modda) — tekşiring",
+   "teg": "#yer_soligi"
+  },
+  {
+   "id": "yer_tolov",
+   "nom": "Yer soliği — çoraklik tölov",
+   "tur": "tolov",
+   "davr": "choraklik_joriy",
+   "kun": 10,
+   "oylar": [
+    3,
+    6,
+    9,
+    12
+   ],
+   "faol": false,
+   "tekshirish": true,
+   "izoh": "SK 432-modda — tekşiring",
+   "teg": "#yer_soligi"
+  },
+  {
+   "id": "suv_hisobot",
+   "nom": "Suv soliği — yillik hisobot",
+   "tur": "hisobot",
+   "davr": "yillik",
+   "kun": 20,
+   "oylar": [
+    1
+   ],
+   "faol": false,
+   "tekshirish": true,
+   "izoh": "SK 446-modda — tekşiring",
+   "teg": "#suv_soligi"
+  },
+  {
+   "id": "suv_tolov",
+   "nom": "Suv soliği — çoraklik tölov",
+   "tur": "tolov",
+   "davr": "choraklik",
+   "kun": 20,
+   "oylar": [
+    1,
+    4,
+    7,
+    10
+   ],
+   "faol": false,
+   "tekshirish": true,
+   "izoh": "SK 447-modda — tekşiring",
+   "teg": "#suv_soligi"
+  },
+  {
+   "id": "moliyaviy_chorak",
+   "nom": "Çoraklik moliyaviy hisobot",
+   "tur": "hisobot",
+   "davr": "choraklik",
+   "kun": 25,
+   "oylar": [
+    4,
+    7,
+    10
+   ],
+   "faol": false,
+   "tekshirish": true,
+   "izoh": "Tekşiring",
+   "teg": "#moliyaviy_hisobot"
+  },
+  {
+   "id": "moliyaviy_yillik",
+   "nom": "Yillik moliyaviy hisobot",
+   "tur": "hisobot",
+   "davr": "yillik",
+   "kun": 15,
+   "oylar": [
+    2
+   ],
+   "faol": false,
+   "tekshirish": true,
+   "izoh": "Tekşiring",
+   "teg": "#moliyaviy_hisobot"
+  },
+  {
+   "id": "jsh_deklaratsiya",
+   "nom": "Jismoniy şaxslar — jami yillik daromad deklaratsiyasi",
+   "tur": "hisobot",
+   "davr": "yillik",
+   "kun": 1,
+   "oylar": [
+    4
+   ],
+   "faol": true,
+   "izoh": "SK 393-modda",
+   "teg": "#jshds #deklaratsiya"
+  },
+  {
+   "id": "jsh_molmulk",
+   "nom": "Jismoniy şaxslar — mol-mulk va yer soliği tölovi",
+   "tur": "tolov",
+   "davr": "yillik_joriy",
+   "kun": 15,
+   "oylar": [
+    4,
+    10
+   ],
+   "faol": false,
+   "tekshirish": true,
+   "izoh": "Teng ulușlarda — tekşiring",
+   "teg": "#molmulk_soligi"
+  }
+ ]
+}
