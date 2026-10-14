@@ -7,7 +7,7 @@ GitHub Actions har kuni 10:00 (Toşkent) da işga tuşiradi. muddatlar.json dagi
 
 Muhit: BOT_TOKEN, CHANNEL (standart formulaAccaud), ADMIN_ID (xabarnoma), SINOV=1 bölsa kanalga emas, adminga yuboradi
 """
-import json, os, sys, urllib.request, urllib.parse
+import json, os, sys, html, urllib.request, urllib.parse
 from datetime import date, datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -109,18 +109,18 @@ def main():
         if key in st["yuborilgan"]: continue
         items = agenda[d]
         head = "⏰ BUGUN oxirgi kun" if left == 0 else f"⏰ {left} kun qoldi"
-        lines = [f"{head} — muddat: {fmt(d)}"]
+        lines = [f"<b>{html.escape(head)} — muddat: {html.escape(fmt(d))}</b>"]
         shifted = {d0 for _, d0 in items if d0 != d}
         if shifted:
             d0 = min(shifted)
-            lines.append(f"(asl muddat {fmt(d0)} dam olish kuniga tuşgani uçun keyingi iş kuniga surilgan)")
+            lines.append(html.escape(f"(asl muddat {fmt(d0)} dam olish kuniga tuşgani uçun keyingi iş kuniga surilgan)"))
         lines.append("")
         tags = set(["#muddat", "#soliq"])
         for m, d0 in items:
             icon = {"hisobot": "📄", "tolov": "💸"}.get(m["tur"], "🧾")
             per = period_label(m, d0.month, d0.year)
-            lines.append(f"{icon} {m['nom']}" + (f" — {per} uçun" if per else ""))
-            if m.get("izoh"): lines.append(f"    {m['izoh']}")
+            lines.append(f"{icon} <b>{html.escape(m['nom'])}</b>" + (f" — {html.escape(per)} uçun" if per else ""))
+            if m.get("izoh"): lines.append(f"    <i>{html.escape(m['izoh'])}</i>")
             for t in m.get("teg", "").split(): tags.add(t)
         lines.append("")
         lines.append("📚 Hisobot şakllari va formulalar: t.me/AccaudBot/katalog")
@@ -128,7 +128,7 @@ def main():
         text = "\n".join(lines)
 
         target = ADMIN if SINOV else CHANNEL
-        r = api("sendMessage", {"chat_id": target, "text": text, "disable_web_page_preview": "true"})
+        r = api("sendMessage", {"chat_id": target, "text": text, "parse_mode": "HTML", "disable_web_page_preview": "true"})
         if r.get("ok"):
             posted += 1
             if not SINOV: st["yuborilgan"].append(key)
