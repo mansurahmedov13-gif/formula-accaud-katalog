@@ -108,7 +108,7 @@ def main():
         key = f"{d.isoformat()}:{left}"
         if key in st["yuborilgan"]: continue
         items = agenda[d]
-        head = "⏰ BUGUN oxirgi kun" if left == 0 else f"⏰ {left} kun qoldi"
+        head = {0: "⏰ Bugun", 1: "⏰ 1 kun qoldi (ertaga)"}.get(left, f"⏰ {left} kun qoldi")
         lines = [f"<b>{html.escape(head)} — muddat: {html.escape(fmt(d))}</b>"]
         shifted = {d0 for _, d0 in items if d0 != d}
         if shifted:
