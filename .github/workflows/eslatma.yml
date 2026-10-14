@@ -1,0 +1,35 @@
+name: eslatma
+
+on:
+  schedule:
+    - cron: "5 5 * * *"
+  workflow_dispatch:
+    inputs:
+      sinov:
+        description: "Sinov: kanalga emas, adminga yuborish (ha/yoq)"
+        default: "ha"
+
+permissions:
+  contents: write
+
+jobs:
+  eslatma:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Eslatma
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          ADMIN_ID: ${{ vars.ADMIN_ID }}
+          CHANNEL: formulaAccaud
+          SINOV: ${{ github.event.inputs.sinov == 'ha' && '1' || '' }}
+        run: python eslatma.py
+      - name: Saqlash
+        run: |
+          git config user.name "accaud-bot"
+          git config user.email "accaud-bot@users.noreply.github.com"
+          git add eslatma_state.json
+          git diff --cached --quiet || (git commit -m "eslatma: holat" && git push)
