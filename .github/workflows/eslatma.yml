@@ -2,7 +2,7 @@ name: eslatma
 
 on:
   schedule:
-    - cron: "5 5 * * *"
+        - cron: "40 4 * * *"
   workflow_dispatch:
     inputs:
       sinov:
