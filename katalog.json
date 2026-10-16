@@ -1,6 +1,6 @@
 {
  "channel": "formulaAccaud",
- "updated": "2026-10-13",
+ "updated": "2026-10-16",
  "sections": [
   {
    "key": "E",
@@ -2043,6 +2043,131 @@
    "files": [],
    "photo": false,
    "date": "2026-10-13",
+   "note": ""
+  },
+  {
+   "num": "1C-024",
+   "sec": "1C",
+   "title": "",
+   "body": "",
+   "tags": [
+    "1c",
+    "obrabotka",
+    "fides",
+    "ehf",
+    "esf"
+   ],
+   "post": 230,
+   "posts": [
+    230
+   ],
+   "files": [
+    {
+     "name": "ЗагрузкаЭСФ_ПТУ_БП20.epf",
+     "id": 230
+    }
+   ],
+   "photo": false,
+   "date": "2026-10-16",
+   "note": ""
+  },
+  {
+   "num": "1C-025",
+   "sec": "1C",
+   "title": "",
+   "body": "",
+   "tags": [
+    "1c",
+    "obrabotka",
+    "fides",
+    "ehf",
+    "esf"
+   ],
+   "post": 231,
+   "posts": [
+    231
+   ],
+   "files": [
+    {
+     "name": "ЗагрузкаЭСФ_РТУ_Excel_БП20.epf",
+     "id": 231
+    }
+   ],
+   "photo": false,
+   "date": "2026-10-16",
+   "note": ""
+  },
+  {
+   "num": "1C-026",
+   "sec": "1C",
+   "title": "ЭСФ yuklash obrabotkasi yangilandi — 1Сv8.3 Buxgalteriya Fides 1.2 uchun",
+   "body": "Soliq servisdan Excel’ga eksport qilingan ЭСФ'larni «Поступление товаров и услуг» va «Реализация товаров и услуг» sifatida yuklaydigan obrabotkalarga 3 ta muhim o’zgarish kiritildi:\n✅ Номенклатура endi NOMI bo’yicha topiladi. Bitta ИКПУ kodda o’nlab har xil tovar bo’lishi mumkin — avval ИКПУ mos kelsa, nomi boshqa bo’lsa ham eski номенклатура olinardi. Endi asosiy kalit — pozitsiya nomi; ИКПУ faqat nomi ham mos kelganda hisobga olinadi. Topilmasa — ИКПУ va ИКПУ nomi bilan yangisi yaratiladi.\n✅ Eski xatolar ham tuzatiladi. Faylni qayta o’qisangiz, avval yuklangan hujjatlarda nomi ЭСФ'ga mos kelmaydigan qatorlar topilib, «Обновить номенклатуру» harakati qo’yiladi — jadvalda qaysi номенклатура qaysisiga almashishi ko’rinib turadi, keraksiz qatorni belgidan olib qo’yasiz. «Загрузить» — qatorlar almashadi, hujjat qayta o’tkaziladi. Nomlardagi registr, lotin/kirill, bo’sh joy, «.» va «,» farqi xato deb hisoblanmaydi.\n✅ Kommentariyda ЭСФ turi. Endi hujjat izohi: ID …; Подписан; Стандартный yoki …; Без оплаты — hujjatlar jurnalidanoq turini ko’rasiz, otbor qilish oson.",
+   "tags": [
+    "1c",
+    "obrabotka",
+    "fides",
+    "ehf",
+    "esf"
+   ],
+   "post": 232,
+   "posts": [
+    232
+   ],
+   "files": [],
+   "photo": false,
+   "date": "2026-10-16",
+   "note": ""
+  },
+  {
+   "num": "1C-027",
+   "sec": "1C",
+   "title": "",
+   "body": "",
+   "tags": [
+    "1c",
+    "obrabotka",
+    "fides",
+    "ehf",
+    "esf"
+   ],
+   "post": 233,
+   "posts": [
+    233
+   ],
+   "files": [
+    {
+     "name": "ЗагрузкаЭСФ_ПТУ_Excel_БП20.epf",
+     "id": 233
+    }
+   ],
+   "photo": false,
+   "date": "2026-10-16",
+   "note": ""
+  },
+  {
+   "num": "1C-028",
+   "sec": "1C",
+   "title": "",
+   "body": "",
+   "tags": [
+    "1c",
+    "obrabotka",
+    "fides",
+    "ehf",
+    "esf"
+   ],
+   "post": 234,
+   "posts": [
+    234
+   ],
+   "files": [
+    {
+     "name": "ЗагрузкаЭСФ_ПТУ_Excel_БП20.epf",
+     "id": 234
+    }
+   ],
+   "photo": false,
+   "date": "2026-10-16",
    "note": ""
   }
  ]
