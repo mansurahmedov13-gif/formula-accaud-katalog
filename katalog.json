@@ -1,6 +1,6 @@
 {
  "channel": "formulaAccaud",
- "updated": "2026-10-17",
+ "updated": "2026-10-19",
  "sections": [
   {
    "key": "E",
@@ -2184,6 +2184,45 @@
    ],
    "photo": true,
    "date": "2026-10-16",
+   "note": ""
+  },
+  {
+   "num": "1C-029",
+   "sec": "1C",
+   "title": "Назначение платежа dan kontragent va shartnomani o'zi topadigan universal obrabotka — 1Сv8.3 Buxgalteriya Fides 1.2 uchun",
+   "body": "Bank ko'chirmasi yuklangandan keyin tanish holat: jismoniy shaxslarning pullari PAYME yoki bitta umumiy kontragentga tushgan, yuridik shaxslarda hamma joyda «Основной договор», qaytarilgan pullar esa «Оплата поставщику» bo'lib turibdi. Kerakli ma'lumotlarning hammasi назначение платежа ichida bor: FISh, ПИНФЛ, shartnoma raqami, «qaytarish» so'zi. Yuzlab hujjatni qo'lda to'g'rilash esa soatlab ish.\nYangi obrabotka bularni bir bosishda qiladi:\n✅ 4 xil bank hujjati — ПП исходящее, ПП входящее, ПО на поступление, ПО на списание. Hujjat va uning виды операций ni o'zingiz tanlaysiz. ✅ 3 ta rejim — «Авто» (yuridik shaxsda faqat shartnoma, qolganlarida kontragent + shartnoma), «Kontragent JSh + shartnoma» va «Faqat shartnoma». ✅ Kontragent JSh — ПИНФЛ bo'yicha aniq topadi, FISh bo'yicha esa lotin = kirill (Karimov = Каримов, X = H, Q = K). Xato yozilgan ismlar va inisiallar ham topiladi. ✅ Shartnoma raqami — «№ 17/2026», «12-son», «дог. 15А» kabi yozuvlarni kontragent shartnomalari ichidan topadi. Shartnoma shapkada ham, расшифровка платежа da ham almashadi. ✅ Qoidalar — masalan, «qaytarish, vozvrat, қайтариш» so'zi bo'lsa → «Возврат денежных средств покупателю». Shartnoma ham mos turdagisiga almashadi. ✅ Schyotlar to'g'ri qo'yiladi — «С покупателем» shartnoma uchun 4010 / 6310, «С поставщиком» uchun 6010 / 4310. Avval «Счета учета расчетов с контрагентами» registridan olinadi. ✅ Qulay otbor — tashkilot, bank hisobi, hujjatdagi kontragent va ИНН bo'yicha (Равно, Больше, Интервал…). ✅ Rangli nazorat — yashil qatorlar aniq topilgan va avtomat belgilanadi, sariqlarni o'zingiz tekshirasiz. Jadvalda otbor va saralash bor, kerak bo'lsa kontragent va shartnomani qo'lda tanlash mumkin. ✅ Xavfsiz — faqat belgilangan qatorlar o'zgaradi, xato bo'lsa hujjat umuman tegilmaydi. Проведенный hujjatlar qayta o'tkaziladi, oxirida o'zgarishlar ro'yxati chiqadi. ✅ Interfeys ikki tilda — o'zbekcha / русский, bitta tugma bilan almashadi.\nHar bir sozlama nima qilishi yozilgan batafsil yo'riqnoma obrabotkaning ichida.\n📌 Sinov bazangizda ko'rsatib beramiz.\nMurojaat uchun: Telegram @mansur0111 · +998 90 350 01 11\n#1C #1С #Fides #Buxgalteriya #БухгалтерияФидес #1Cobrabotka #обработка1С #buxgalter #бухгалтер #bankkochirmasi #назначениеплатежа #kontragent #shartnoma #ПИНФЛ #avtomatlashtirish #Uzbekistan",
+   "tags": [
+    "1c",
+    "1",
+    "fides",
+    "buxgalteriya",
+    "1cobrabotka",
+    "buxgalter",
+    "bankkochirmasi",
+    "kontragent",
+    "shartnoma",
+    "avtomatlashtirish",
+    "uzbekistan"
+   ],
+   "post": 241,
+   "posts": [
+    241,
+    242,
+    243,
+    244
+   ],
+   "files": [
+    {
+     "name": "ОпределениеКонтрагентаИДоговора_БП20_v9.epf",
+     "id": 243
+    },
+    {
+     "name": "ОпределениеКонтрагентаИДоговора_БП20_v10.epf",
+     "id": 244
+    }
+   ],
+   "photo": true,
+   "date": "2026-10-19",
    "note": ""
   }
  ]
