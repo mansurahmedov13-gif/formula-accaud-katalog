@@ -1,6 +1,6 @@
 {
  "channel": "formulaAccaud",
- "updated": "2026-10-20",
+ "updated": "2026-10-22",
  "sections": [
   {
    "key": "E",
@@ -2228,6 +2228,40 @@
    ],
    "photo": true,
    "date": "2026-10-19",
+   "note": ""
+  },
+  {
+   "num": "1C-030",
+   "sec": "1C",
+   "title": "Kontragentlar spravochnigini tartibga keltiruvchi obrabotka — 1Сv8.3 Buxgalteriya Fides 1.2 uchun",
+   "body": "Tanish holat: bitta kontragent «alfa trade mchj», boshqasi «ООО Альфа Трейд», uchinchisi «ALFA TRADE» deb yozilgan. Ba'zi nomlar kirillda, ba'zilari lotinda, ba'zilarida esa lotin so'z ichiga kirill «О» yoki «С» kirib qolgan. Bitta korxona 2–3 marta kiritilgani uchun akt sverka va qoldiqlar bo'linib ketadi. Minglab kontragentni qo'lda tekshirish esa haftalab ish.\nYangi obrabotka bularni topadi, natijani oldindan ko'rsatadi va bir bosishda to'g'rilaydi:\n✅ 7 ta rejim — kichik harflar, katta harflar, rus harflari, lotin harflari, aralash (lotin nomga kirill harf kirgan), OOO/MCHJ bor nomlar va dubllar. ✅ KATTA LOTINga o'tkazish — o'zbek lotin alifbosi bo'yicha: «Ҳамидов Шерзод Ғайрат ўғли» → «HAMIDOV SHERZOD G'AYRAT O'G'LI». Yangi nom «Yangi nomi» ustunida oldindan ko'rinadi. ✅ OOO, MCHJ va boshqalarni olib tashlash — DK, DUK, AJ, XK, YaTT, QK, ООО, МЧЖ va hokazo: «OOO Ohor group» → «Ohor group». Ro'yxatni o'zingiz to'ldirasiz. ✅ Dubllarni topish va birlashtirish — STIR yoki JShShIR bir xil bo'lsa, aniq dubl hisoblanadi va avtomatik belgilanadi. Faqat nomi o'xshash bo'lsa (harf, alifbo, OOO/MCHJ, qo'shtirnoq va so'z tartibi farq qilsa ham), qator sariq rangda chiqadi va uni o'zingiz tekshirasiz. ✅ YuSh va JSh aralashmaydi — STIR bo'yicha yuridik shaxs (2…–3…) va jismoniy shaxs (4…–6…) ajratiladi. Ular hech qachon bir-biriga birlashtirilmaydi. ✅ Hammasi asosiy kontragentga o'tadi — hujjatlar, provodkalar, registrlar, shartnomalar va bank hisoblari. Bir xil shartnomalar birlashtiriladi, qolganlari ko'chiriladi. Dubl darhol o'chiriladi. ✅ Xavfsiz — faqat belgilangan qatorlar o'zgaradi. Nom o'zgarishlarini qaytarish tugmasi bor. Natija Excel hisobotga chiqadi, sozlamalar saqlanadi. ✅ Interfeys ikki tilda — o'zbekcha / русский, bitta tugma bilan almashadi.\nBatafsil yo'riqnoma obrabotkaning ichida bor.\n📌 Sinov bazangizda ko'rsatib beramiz.\nMurojaat uchun: Telegram @mansur0111 · +998 90 350 01 11\n#1C #1С #Fides #Buxgalteriya #БухгалтерияФидес #1Cobrabotka #обработка1С #buxgalter #бухгалтер #kontragent #контрагенты #dubllar #дубли #STIR #ИНН #avtomatlashtirish #Uzbekistan",
+   "tags": [
+    "1c",
+    "1",
+    "fides",
+    "buxgalteriya",
+    "1cobrabotka",
+    "buxgalter",
+    "kontragent",
+    "dubllar",
+    "stir",
+    "avtomatlashtirish",
+    "uzbekistan"
+   ],
+   "post": 250,
+   "posts": [
+    250,
+    251,
+    252
+   ],
+   "files": [
+    {
+     "name": "ПроверкаНаименованийКонтрагентов_БП20_v6.epf",
+     "id": 252
+    }
+   ],
+   "photo": true,
+   "date": "2026-10-22",
    "note": ""
   }
  ]
