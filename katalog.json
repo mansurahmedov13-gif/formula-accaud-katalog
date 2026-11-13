@@ -1,6 +1,6 @@
 {
  "channel": "formulaAccaud",
- "updated": "2026-11-10",
+ "updated": "2026-11-13",
  "sections": [
   {
    "key": "E",
@@ -2257,7 +2257,8 @@
     256,
     257,
     258,
-    259
+    259,
+    260
    ],
    "files": [
     {
