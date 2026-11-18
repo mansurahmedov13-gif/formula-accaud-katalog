@@ -1,6 +1,6 @@
 {
  "channel": "formulaAccaud",
- "updated": "2026-11-13",
+ "updated": "2026-11-19",
  "sections": [
   {
    "key": "E",
@@ -2258,7 +2258,8 @@
     257,
     258,
     259,
-    260
+    260,
+    266
    ],
    "files": [
     {
@@ -2284,6 +2285,10 @@
     {
      "name": "СозданиеДокументов_v5.epf",
      "id": 259
+    },
+    {
+     "name": "SOATO_Ozbekiston_2025-11-28.xlsx",
+     "id": 266
     }
    ],
    "photo": true,
