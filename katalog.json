@@ -1,6 +1,6 @@
 {
  "channel": "formulaAccaud",
- "updated": "2026-11-20",
+ "updated": "2026-11-26",
  "sections": [
   {
    "key": "E",
@@ -2261,7 +2261,9 @@
     260,
     266,
     268,
-    270
+    270,
+    276,
+    278
    ],
    "files": [
     {
@@ -2299,6 +2301,14 @@
     {
      "name": "ЗагрузкаЭСФ_ПТУ_Excel_БП20_v5.epf",
      "id": 270
+    },
+    {
+     "name": "КлиентБанк_Excel_Aloqa_Hamkor_v5.epf",
+     "id": 276
+    },
+    {
+     "name": "kirill-lotin-ogsc.html",
+     "id": 278
     }
    ],
    "photo": true,

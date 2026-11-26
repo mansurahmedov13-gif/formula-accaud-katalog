@@ -1,5 +1,17 @@
 {
- "offset": 704711800,
+ "offset": 704711803,
  "initialized": true,
- "pending": []
+ "pending": [
+  {
+   "message_id": 277,
+   "chat": {
+    "id": -1001455718400,
+    "title": "Formula-Accaud",
+    "username": "formulaAccaud",
+    "type": "channel"
+   },
+   "date": 1795671952,
+   "text": "Aloqabank 062-hisoboti va Hamkorbank yangi bank-klieti Справка о работе счёта dan yuklaş"
+  }
+ ]
 }
