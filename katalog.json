@@ -1,6 +1,6 @@
 {
  "channel": "formulaAccaud",
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "sections": [
   {
    "key": "E",
@@ -2263,7 +2263,8 @@
     268,
     270,
     276,
-    278
+    278,
+    279
    ],
    "files": [
     {
@@ -2309,6 +2310,10 @@
     {
      "name": "kirill-lotin-ogsc.html",
      "id": 278
+    },
+    {
+     "name": "kirill-lotin-ogsc.html",
+     "id": 279
     }
    ],
    "photo": true,
